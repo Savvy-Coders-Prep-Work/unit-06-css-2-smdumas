@@ -45,17 +45,15 @@ position: bottom right;
 }
 
 /* Grid*/
-/* CSS Stylesheet */
-.grid-container 
+ 
+.grid-container
+
 {
     display: grid;
     grid-template-columns: repeat(4, 3fr);
-    .grid-temlate-areas:
-    "header header header"
-    "sidebar sidebar sidebar"
-    "main content main content main content"
-    "footer footer footer"
+    
 }
+
 .header 
 {
     grid-area: header;
@@ -71,6 +69,7 @@ position: bottom right;
 }
 
 .main content
+
 {
    grid-area: footer;
 }
