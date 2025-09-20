@@ -72,5 +72,5 @@ position: bottom right;
 
 .main content
 {
-   grid-area: main footer;
+   grid-area: footer;
 }
