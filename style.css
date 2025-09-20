@@ -23,11 +23,54 @@
    Bottom 10px;
 }
 
-/*column class*/
-.Class= "Column 1" 
-{
-
-}
+/*fixed class*/
+ .fixed-element
+{ 
+position: bottom right;
+} 
  
 
+/*column*/
+.class column 
+{
+ border: 1px solid light gray;
+ float: right;
+}
 
+
+/*container*/
+.container
+{
+  display: inline-flex;  
+}
+
+/* Grid*/
+/* CSS Stylesheet */
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    .grid-temlate-areas:
+    "header header header"
+    "sidebar sidebar sidebar"
+    "main content main content main content"
+    "footer footer footer"
+}
+.header 
+{
+    grid-area: header;
+}
+
+.sidebar
+{
+   grid-area: sidebar;
+}
+.main content
+{
+   grid-area: main content;
+}
+
+.main content
+{
+   grid-area: main footer;
+}
