@@ -1,1 +1,79 @@
 /* Yep. Nothing. You've got this though! Refer back to the curriculum wherever necessary! */
+.box{
+ box-sizing: border-box;
+ width: 400px;
+ background-color: lightblue;  
+ padding-top: 10px; 
+ padding-bottom: 10px; 
+ margin: 30px;
+}
+/*relative Style*/
+.relative-element{
+    
+    left: 50px
+}
+/*absolute style changed to relative readme #6 .absolute=element.  I wonder if I should remove the line in HTML*/
+.relative-element
+{
+   position: relative;
+   top: 150px;
+   right: 50px
+   Bottom 10px;
+}
+
+/*fixed class*/
+ .fixed-element
+{ 
+position: fiexed; bottom: 0; right:0;
+} 
+ 
+
+/*column*/
+.class column 
+{
+ border: 1px solid light gray;
+ float: right;
+}
+
+
+/*container*/
+.container
+{
+  display: inline-flex;  
+}
+
+/* Grid*/
+ 
+.grid-container
+
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+    
+}
+
+.header 
+{
+    grid-area: header;
+}
+
+.sidebar
+{
+   grid-area: sidebar;
+}
+
+.main
+{
+   grid-area: main;
+}
+
+.footer
+
+{
+   grid-area: footer;
+}
