@@ -9,13 +9,11 @@
 }
 /*relative Style*/
 .relative-element{
-    position: relative;
-    top: 10px;
-    bottom: 10px;
-    right: 50px
+    
+    left: 50px
 }
-/*absolute style*/
-.absolute-element
+/*absolute style changed to relative readme #6 .absolute=element.  I wonder if I should remove the line in HTML*/
+.relative-element
 {
    position: relative;
    top: 150px;
@@ -26,7 +24,7 @@
 /*fixed class*/
  .fixed-element
 { 
-position: bottom right;
+position: fiexed; bottom: 0; right:0;
 } 
  
 
@@ -50,7 +48,12 @@ position: bottom right;
 
 {
     display: grid;
-    grid-template-columns: repeat(4, 3fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
     
 }
 
@@ -64,9 +67,9 @@ position: bottom right;
    grid-area: sidebar;
 }
 
-.main content
+.main
 {
-   grid-area: main content;
+   grid-area: main;
 }
 
 .footer
